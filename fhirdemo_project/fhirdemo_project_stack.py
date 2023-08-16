@@ -138,7 +138,7 @@ class FhirdemoProjectStack(Stack):
         # create Policy
         fhirdemoPolicy = iam.Policy(self, "FHIR-Workshop-Access-Policy",
             statements=[iam.PolicyStatement(
-                actions=["ec2:CreateNetworkInterface", "secretsmanager:GetSecretValue", "healthlake:CreateResource", "ec2:DescribeNetworkInterfaces", "ec2:DeleteNetworkInterface"],
+                actions=["ec2:CreateNetworkInterface", "secretsmanager:GetSecretValue", "kms:GenerateDataKey", "healthlake:CreateResource", "ec2:DescribeNetworkInterfaces", "ec2:DeleteNetworkInterface"],
                 resources=["*"]
         )])
         fhirdemoPolicy.attach_to_role (lambda_role)     
