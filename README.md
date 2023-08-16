@@ -12,8 +12,8 @@ cd fhirdemo-project
 <br>
 Upload CFT file (<Project_root_folder>/ehrdb_to_fhir_ahl.yaml) Eg. fhirdemo-project/ehrdb_to_fhir_ahl.yaml <br>
 Input the values for the parameters: <br>
-ahldatastore=https://healthlake.us-east-1.amazonaws.com/datastore/16a9465c648e06a74cc29eb276619d86/r4/ <br>
-secretname=fhir/demo/secret <br>
+ahldatastore=https://healthlake.us-east-1.amazonaws.com/datastore/<datastoreid>/r4/ <br>
+secretname=<fhir_demo_secret> <br>
 regionname=us-east-1 <br>
 vpccidr=172.31.100.0/24 <br>
 subnetsize=26 <br>
