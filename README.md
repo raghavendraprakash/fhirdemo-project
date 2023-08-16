@@ -16,7 +16,7 @@ regionname=us-east-1 <br>
 vpccidr=172.31.100.0/24 <br>
 subnetsize=26 <br>
 
-**----------------------------------------- OPTIONAL -------------------------------------------** <br>
+**----------------------------------------- OPTIONAL BEGIN -------------------------------------------** <br>
 **[Optional] If you want to use CDK and develop further, use Cloud9 IDE*** <br>
 **Ensure you have python version 3 running; Python3.7 will also work**  <br>
 ```
@@ -41,7 +41,7 @@ cdk synth
 ```
 cdk deploy FhirdemoProjectStack --parameters ahldatastore="https://healthlake.us-east-1.amazonaws.com/datastore/16a9465c648e06a74cc29eb276619d86/r4/" -—parameters secretname="fhir/demo/secret" -—parameters regionname="us-east-1" -—parameters vpccidr="172.31.100.0/24" —-parameters subnetsize=26
 ```
-**----------------------------------------- OPTIONAL -------------------------------------------** <br>
+**----------------------------------------- OPTIONAL END -------------------------------------------** <br>
 <br> 
 
 <br>
