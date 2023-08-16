@@ -7,7 +7,12 @@ cd fhir
 git clone https://github.com/raghavendraprakash/fhirdemo-project.git
 cd fhirdemo-project
 ```
-**Ensure you have python version 3 running; Python3.7 will also work** 
+**Simple way using CFT console.**
+Upload CFT file (ehrdb_to_fhir_ahl.yaml) 
+
+**-------------------------------------------------------------------------------------** <br>
+**[Optional] If you want to use CDK and develop further, use Cloud9 IDE*** <br>
+**Ensure you have python version 3 running; Python3.7 will also work**  <br>
 ```
 python -V
 ```
@@ -30,6 +35,11 @@ cdk synth
 ```
 cdk deploy FhirdemoProjectStack --parameters ahldatastore="https://healthlake.us-east-1.amazonaws.com/datastore/16a9465c648e06a74cc29eb276619d86/r4/" -—parameters secretname="fhir/demo/secret" -—parameters regionname="us-east-1" -—parameters vpccidr="172.31.100.0/24" —-parameters subnetsize=26
 ```
+**-------------------------------------------------------------------------------------**
+<br> 
+
+<br>
+
 **Once the cloudformation stack is complete, get the instance id from the Cloudformation output; Go to EC2 console; SSH Connect from EC2 console**
 <Br> Once you are in the shell console run the following.
 
