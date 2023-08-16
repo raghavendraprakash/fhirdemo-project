@@ -79,6 +79,7 @@ psql --host=<rds_host> --username=postgres --password
 ```
 Execute the following (Ensure the semicolon ends the command)
 ```
+\c postgres
 \i ehrdatamodel.sql;
 \i ehrsampledata.sql;
 commit;
