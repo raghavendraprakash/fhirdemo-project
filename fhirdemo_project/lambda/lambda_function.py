@@ -49,7 +49,7 @@ def lambda_handler(event, context):
     data_store_endpoint = datastore_endpoint
 
     #requestBody = {"resourceType": "Patient", "active": True, "name": [{"use": "official","family": "Dow","given": ["Jen444"]},{"use": "usual","given": ["Jen"]}],"gender": "female","birthDate": "1966-09-01"}
-    region = 'us-east-1'
+    region = region_name
     
     # creating FHIR Patient resource
     #Frame the resource endpoint
