@@ -1,6 +1,6 @@
 # fhirdemo-project
 
-If you are diving deep and intending to develop further, feel free to use Cloud9 IDE. Else, you can just git clone on your local machine, get hold of CFT YAML file; Run through CloudFormation Console. <br>
+Please use Cloud9 IDE. <br>
 Clone the code repository
 ```
 mkdir fhir
@@ -8,19 +8,8 @@ cd fhir
 git clone https://github.com/raghavendraprakash/fhirdemo-project.git
 cd fhirdemo-project
 ```
-**Use CloudFormation Console - Easy way!**
-<br>
-Upload CFT file (<Project_root_folder>/ehrdb_to_fhir_ahl.yaml) Eg. fhirdemo-project/ehrdb_to_fhir_ahl.yaml <br>
-Input the values for the parameters: <br>
-ahldatastore=https://healthlake.us-east-1.amazonaws.com/datastore/<datastoreid>/r4/ <br>
-secretname=<fhir_demo_secret> <br>
-regionname=us-east-1 <br>
-vpccidr=172.31.100.0/24 <br>
-subnetsize=26 <br>
 
-**----------------------------------------- OPTIONAL BEGIN -------------------------------------------** <br>
 <br>
-**If you want to use CDK and develop further, use Cloud9 IDE*** <br>
 **Ensure you have python version 3 running; Python3.7 will also work**  <br>
 ```
 python -V
@@ -32,9 +21,9 @@ source .venv/bin/activate
 python -m pip install aws-cdk-lib
 python -m pip install --upgrade pip
 ```
-**Check if CDK synth is working...**
+**Run cdk bootstrap...**
 ```
-cdk synth
+cdk bootstrap
 ```
 
 **Deployment Architecture**
@@ -43,14 +32,8 @@ cdk synth
 <br>
 **Deploy Workshop infrastructure using cdk deploy**
 ```
-cdk deploy FhirdemoProjectStack \
---parameters ahldatastore="https://healthlake.us-east-1.amazonaws.com/datastore/16a9465c648e06a74cc29eb276619d86/r4/" \
---parameters secretname="fhir/demo/secret" \
---parameters regionname="us-east-1" \
---parameters vpccidr="172.31.100.0/24" \
---parameters subnetsize=26
+cdk deploy FhirdemoProjectStack --parameters ahldatastore="https://healthlake.<REGION_NAME>.amazonaws.com/datastore/<DATASTORE_ID>/r4/" --parameters secretname="fhir/demo/secret" --parameters regionname="<REGION_NAME>" --parameters vpccidr="172.31.100.0/24" --parameters subnetsize=26
 ```
-**----------------------------------------- OPTIONAL END -------------------------------------------** <br>
 <br> 
 
 <br>
