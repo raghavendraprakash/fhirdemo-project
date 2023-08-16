@@ -2,7 +2,6 @@
 
 Git clone
 ```
-cd ..
 mkdir fhir
 cd fhir
 git clone https://github.com/raghavendraprakash/fhirdemo-project.git
