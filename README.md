@@ -113,6 +113,13 @@ After the successful execution, go to CloudWatch logs, pick any FHIR resource id
 Note: Lambda is chosen just to demonstrate the ability to transform table data into FHIR resource; For bulk transfer, make use of bulk import option of FHIR. Employ Lambda as required if there is need for real time capture of the details.
 <br>
 
+**Credits**
+Lambda layer for FHIR Resource libray - https://github.com/nazrulworld/fhir.resources/tree/4.0.0 <br>
+[https://pypi.org/search/?c=License+%3A%3A+OSI+Approved+%3A%3A+MIT+License](https://github.com/nazrulworld/fhir.resources/blob/main/LICENSE) <br>
+
+Lambda layer for connecting to RDS PostgreSQL - https://pypi.org/project/aws-psycopg2/ <br>
+https://pypi.org/search/?c=License+%3A%3A+OSI+Approved+%3A%3A+MIT+License
+
 
 
 
