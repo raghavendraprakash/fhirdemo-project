@@ -84,7 +84,7 @@ javac TestDataGenerator.java
 java TestDataGenerator
 ```
 Ensure ehrsampledata.sql file is generated in the current directory.
-
+<br><br>
 **Execute SQL files - Connect to RDS host;Create tables;Insert the sample data**
 From the cloudformation stack output, note down the RDS host. <br>
 From the AWS Console, Go to secrets manager, retrieve the secret value stored for the secret name fhir/demo/secret (Remember the value you provided during infrastructure provisioning); Note down the password.<br>
@@ -120,6 +120,7 @@ Click Test. Your Lambda should execute for about 3 minutes<br>
 This Lambda fetches the data from database, converts into FHIR resources, and stores in Amazon HealthLake.<br>
 <br>
 After the successful execution, go to CloudWatch logs, pick any FHIR resource id of patient and Run query against Amazon HealthLake using Amazon HealthLake console's Run query option <br>
+<br><br>
 
 **Call to Action**
 <br>
@@ -131,7 +132,7 @@ Reference: https://build.fhir.org/patient.html
 <br>
 Note: Lambda is chosen just to demonstrate the ability to transform table data into FHIR resource; For bulk transfer, make use of bulk import option of FHIR. Employ Lambda as required if there is need for real time capture of the details.
 <br>
-
+<br>
 **Credits**
 <br>
 Lambda layer for FHIR Resource libray - https://github.com/nazrulworld/fhir.resources/tree/4.0.0 <br>
