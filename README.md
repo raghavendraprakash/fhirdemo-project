@@ -8,9 +8,15 @@ git clone https://github.com/raghavendraprakash/fhirdemo-project.git
 cd fhirdemo-project
 ```
 **Simple way using CFT console.**
-Upload CFT file (ehrdb_to_fhir_ahl.yaml) 
+Upload CFT file (<root_folder>/ehrdb_to_fhir_ahl.yaml) <br>
+Input the values for the parameters: <br>
+ahldatastore=https://healthlake.us-east-1.amazonaws.com/datastore/16a9465c648e06a74cc29eb276619d86/r4/ <br>
+secretname=fhir/demo/secret <br>
+regionname=us-east-1 <br>
+vpccidr=172.31.100.0/24 <br>
+subnetsize=26 <br>
 
-**-------------------------------------------------------------------------------------** <br>
+**----------------------------------------- OPTIONAL -------------------------------------------** <br>
 **[Optional] If you want to use CDK and develop further, use Cloud9 IDE*** <br>
 **Ensure you have python version 3 running; Python3.7 will also work**  <br>
 ```
@@ -35,7 +41,7 @@ cdk synth
 ```
 cdk deploy FhirdemoProjectStack --parameters ahldatastore="https://healthlake.us-east-1.amazonaws.com/datastore/16a9465c648e06a74cc29eb276619d86/r4/" -—parameters secretname="fhir/demo/secret" -—parameters regionname="us-east-1" -—parameters vpccidr="172.31.100.0/24" —-parameters subnetsize=26
 ```
-**-------------------------------------------------------------------------------------**
+**----------------------------------------- OPTIONAL -------------------------------------------** <br>
 <br> 
 
 <br>
