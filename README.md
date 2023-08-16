@@ -10,7 +10,9 @@ cd fhirdemo-project
 ```
 
 <br>
-**Ensure you have python version 3 running; Python3.7 will also work**  <br>
+
+**Ensure you have python version 3 running; Python3.7 will also work** 
+
 ```
 python -V
 ```
