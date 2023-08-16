@@ -1,19 +1,25 @@
 # fhirdemo-project
-Make sure you have latest cdk cli
+
+Git clone
 ```
-npm -g uninstall aws-cdk
-npm -g install aws-cdk
+cd ..
+mkdir fhir
+cd fhir
+git clone https://github.com/raghavendraprakash/fhirdemo-project.git
+cd fhirdemo-project
 ```
-**Ensure you have python version 3 running**
+```
+**Ensure you have python version 3 running; Python3.7 will also work** 
 ```
 python -V
 ```
 **Create venv**
 ```
-python -m venv
-python -m pip install aws-cdk-lib
 python -m pip install --upgrade pip
+python -m venv .
 source ./bin/activate
+python -m pip install aws-cdk-lib
+
 ```
 **Verify cdk is okay**
 ```
