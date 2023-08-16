@@ -15,8 +15,8 @@ python -V
 **Create venv**
 ```
 python -m pip install --upgrade pip
-python -m venv .
-source ./bin/activate
+python -m venv venv
+source venv/bin/activate
 python -m pip install aws-cdk-lib
 ```
 **Verify cdk is okay**
