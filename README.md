@@ -24,11 +24,18 @@ python -m pip install aws-cdk-lib
 cdk synth
 ```
 **Deploy Workshop infrastructure using cdk deploy**
+
+![image](https://github.com/raghavendraprakash/fhirdemo-project/assets/6112970/ca230938-2ae6-42c7-ae95-629557df86ad)
+
+
 ```
 cdk deploy FhirdemoProjectStack --parameters ahldatastore="https://healthlake.us-east-1.amazonaws.com/datastore/16a9465c648e06a74cc29eb276619d86/r4/" -—parameters secretname="fhir/demo/secret" -—parameters regionname="us-east-1" -—parameters vpccidr="172.31.100.0/24" —-parameters subnetsize=26
 ```
 **Once the cloudformation stack is complete, get the instance id from the Cloudformation output; Go to EC2 console; SSH Connect from EC2 console**
-Once you are in the shell console run the following.
+<Br> Once you are in the shell console run the following.
+
+![image](https://github.com/raghavendraprakash/fhirdemo-project/assets/6112970/f5a78ade-68fa-4fd4-8ae6-8ece9840384a)
+
 1/ Create ehrdatamodel.sql [Copy the content from ehrdatamodel.sql from the git project and save] <Project_root>/ehrsampledata/ehrdatamodel.sql
 ```
 vi ehrdatamodel.sql
