@@ -107,12 +107,14 @@ Verify the data is inserted
 SELECT * FROM PATIENT;
 ```
 You should see sample data inserted.
-<br>
+<br><br>
+
 **Fetch data from RDS HOST and store in Amazon HealthLake**
+<br><br>
 Lambda does the following <br>
-- Fetch the data from RDS Host
-- Convert to FHIR format
-- Post to Amazon HealthLake using FHIR API (Signed requests)
+- Fetch the data from RDS Host <br>
+- Convert to FHIR format <br>
+- Post to Amazon HealthLake using FHIR API (Signed requests) <br>
 <br>
 Go to AWS Lambda console<br>
 Click on Test; Create sample test event (dummy event) <br>
