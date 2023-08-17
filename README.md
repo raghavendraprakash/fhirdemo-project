@@ -112,6 +112,11 @@ After the successful execution, go to CloudWatch logs, pick any FHIR resource id
 
 **Call to Action**
 <br>
+**Sample Mapping**
+<br>
+![image](https://github.com/raghavendraprakash/fhirdemo-project/assets/6112970/89f7cc0b-cb35-44c6-aee9-7aec7cf492fe)
+
+<br>
 1/ Map Practitioner data from RDS table with FHIR resource for Practitioner <br>
 2/ Map Encounter data from RDS table with FHIR resource for Encounter; Analyze how can extensions be added to FHIR resources <br>
 3/ Think about how can one add extensions to existing FHIR resource, say Patient and update the existing FHIR resource with Practitioner details <br>
