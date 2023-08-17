@@ -90,7 +90,7 @@ Verify the tables created
 ````
 Verify the data is inserted
 ```
-SELECT * FROM PATIENT;
+SELECT * FROM PATIENT LIMIT 5;
 ```
 You should see sample data inserted.
 <br><br>
@@ -126,6 +126,7 @@ Reference: https://build.fhir.org/patient.html
 Note: Lambda is chosen just to demonstrate the ability to transform table data into FHIR resource; For bulk transfer, make use of bulk import option of FHIR. Employ Lambda as required if there is need for real time capture of the details.
 <br>
 <br>
+
 **Credits**
 <br>
 Lambda layer for FHIR Resource libray - https://github.com/nazrulworld/fhir.resources/tree/4.0.0 <br>
